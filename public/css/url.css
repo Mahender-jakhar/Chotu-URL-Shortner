@@ -1,0 +1,77 @@
+body{
+	background: #0cebeb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.abc{
+	color:red;
+	font-size:60px;
+	font-weight: bold; 
+    font-style: oblique;
+    font-family: "Times New Roman", Times, serif;
+}
+.jumbotron{
+	   width:1000px;
+     margin-top: 20px;
+	 border-radius: 10px;
+	
+	 padding-top: 20px;
+	 padding-bottom: 20px;
+}
+p{
+
+	font-size: 20px;
+}
+.we{
+	padding-top:60px; 
+	padding-left:30px;
+	font-size: 30px;
+	font-weight: bold;
+	
+	 width:1000px;
+}
+.iot{
+	font-size: 12px;
+}
+.ip{
+	margin-left: 15px;
+    border-radius: 5px;
+}
+.ipp{
+	
+    border-radius: 5px;
+}
+.btnn
+{
+ border-radius: 10px;
+ font-weight: bold; 
+ font-family: "Times New Roman", Times, serif;
+}
+
+input:focus{
+    background: white;
+    border : 2px solid purple;
+}
+
+.hrr {
+	margin-right: 110px;
+	height:2px;
+	border-width:0;
+
+	background-color:gray;	
+}
+
+.hrt {
+   
+ 	height:2px;
+	border-width:0;
+
+	background-color:gray;	
+}
+
+.uit{
+	font-weight: bold; 
+    font-style: oblique;
+    font-family: "Times New Roman", Times, serif;
+}
