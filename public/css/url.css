@@ -66,12 +66,18 @@ input:focus{
    
  	height:2px;
 	border-width:0;
-
+    margin-right: 140px;
 	background-color:gray;	
 }
 
 .uit{
+	padding-left:30px;
+	font-size: 30px;
 	font-weight: bold; 
     font-style: oblique;
     font-family: "Times New Roman", Times, serif;
+}
+
+.btn{
+	margin-bottom: 5px;
 }
