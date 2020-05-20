@@ -44,8 +44,8 @@ function makeid(length) {
 }
  
 
-app.get("/sumbit", function(req, res){
-	var mj = req.query.text;
+app.post("/sumbit", function(req, res){
+	var mj = req.body.text;
 	
 	 url.findOne({large:mj},function(err,opp) {
 	 	if(err)
