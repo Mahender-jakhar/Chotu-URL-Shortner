@@ -28,8 +28,9 @@ var url = mongoose.model("url", urlSchema);
 	}
 });
 */
-    
+
 app.get("/", function(req, res){
+    console.log("index");
     res.render("index");
 });
 
@@ -42,11 +43,10 @@ function makeid(length) {
    }
    return result;
 }
- 
 
-app.post("/sumbit", function(req, res){
+app.post("/submit", function(req, res){
 	var mj = req.body.text;
-	
+
 	 url.findOne({large:mj},function(err,opp) {
 	 	if(err)
 	 	{
@@ -57,22 +57,22 @@ app.post("/sumbit", function(req, res){
 	 		if(opp == null)
 	 		{
                   // console.log("hi1");
-	 		    	
+
 	 		    			var mjj = makeid(5);
-	 		    			
+
 	 	                    var ioy = "localhost:"+port+"/"+mjj;
-	 		    		
-	 		    	
+
+
 	 		    	console.log(ioy);
 	 		    	url.create({small : ioy,large:mj},function(err,bb){
 	 		    		if(err)
 	 		    			{console.log(err);}
-	 		    		
+
 	 		    	});
 	 		    	var sm = {small:ioy,large:mj}
                   		res.render("index2",{io:sm});
-	 		    	
-           
+
+
 	 		}
 	 		else{
 	 			url.findOne({large:mj},function(err,opp) {
@@ -88,11 +88,11 @@ app.post("/sumbit", function(req, res){
 	 		}
 	 	}
 	 });
-	
-})
+
+});
 
 app.get("/:id", function(req, res){
-      
+    console.log("id");
       var kl = req.params.id;
      // res.send(kl);
       var ii = "localhost:"+port+"/"+kl;
